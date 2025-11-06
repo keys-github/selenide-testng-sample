@@ -3,16 +3,18 @@
 	"user": "YOUR_USERNAME",
 	"key": "YOUR_ACCESS_KEY",
 
-	"capabilities": {
-		"build": "Java Selenide Single"
-	},
+  "capabilities": {
+    "build": "Java Selenide Single"
+  },
 
-	"environments": {
-		"chrome": {
-		    "platform": "windows 10",
-			"browserName": "chrome",
-			"version":"latest",
-			"geoLocation":"US"
-		}
-	}
+  "environments": {
+    "chrome": {
+      "platformName": "Windows 10",
+      "browserName": "chrome",
+      "browserVersion": "latest",
+      "lt:options": {
+        "geoLocation": "US"
+      }
+    }
+  }
 }
