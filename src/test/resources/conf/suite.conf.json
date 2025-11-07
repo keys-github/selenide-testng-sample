@@ -21,7 +21,7 @@
 			"geoLocation":"US"
 		},
 	"safari": {
-			"platform": "macOS Mojave",
+			"platform": "macOS Sonoma",
 			"browserName": "safari",
 			"version":"latest",
 			"geoLocation":"US"

@@ -7,24 +7,30 @@
 		"build": "Java Selenide Parallel"
 	},
 
-	"environments": {
-		"chrome": {
-		    "platform": "windows 10",
-			"browserName": "chrome",
-			"version":"latest",
-			"geoLocation":"US"
-		},
-		"firefox": {
-			"platform": "windows 8.1",
-			"browserName": "firefox",
-			"version":"latest",
-			"geoLocation":"US"
-		},
-		"safari": {
-			"platform": "macOS Mojave",
-			"browserName": "safari",
-			"version":"latest",
-			"geoLocation":"US"
-		}
-	}
+  "environments": {
+    "chrome": {
+      "platformName": "Windows 10",
+      "browserName": "chrome",
+      "browserVersion": "latest",
+      "lt:options": {
+        "geoLocation": "US"
+      }
+    },
+    "firefox": {
+      "platformName": "Windows 10",
+      "browserName": "firefox",
+      "browserVersion": "latest",
+      "lt:options": {
+        "geoLocation": "US"
+      }
+    },
+    "safari": {
+      "platformName": "macOS Sonoma",
+      "browserName": "safari",
+      "browserVersion": "latest",
+      "lt:options": {
+        "geoLocation": "US"
+      }
+    }
+  }
 }

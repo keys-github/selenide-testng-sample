@@ -2,6 +2,7 @@ package com.lambdatest;
 
 import java.io.FileReader;
 import java.net.URL;
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -67,8 +68,8 @@ public class LambdaTestSetupSmartUI {
 
 		driver = new RemoteWebDriver(
 				new URL("http://" + username + ":" + accessKey + "@" + config.get("server") + "/wd/hub"), capabilities);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		sessionId = driver.getSessionId().toString();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        sessionId = driver.getSessionId().toString();
 
 		WebDriverRunner.setWebDriver(driver);
 	}

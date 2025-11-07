@@ -23,9 +23,9 @@ public class SingleTest extends LambdaTestSetup {
 		String newElem = $(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText();
 		sleep(2000);
 
-		Assert.assertEquals(newElem, "Complete LambdaTest Tutorial.");
+        Assert.assertEquals(newElem.trim(), "Complete LambdaTest Tutorial.");
 
-		status = "passed";
+        status = "passed";
 	}
 
 }
